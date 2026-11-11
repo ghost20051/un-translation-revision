@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Translation Revision has moved</title>
+<script>
+  // The site moved to /translation/. Keep the subject and page: /un-translation-revision/#/subject/sci and
+  // /un-translation-revision/subject/sci/learn both open the same place on the new address.
+  (function () {
+    var parts = location.pathname.split('/').filter(Boolean).slice(1);
+    if (parts.length && parts[parts.length - 1] === 'index.html') parts.pop();
+    var rest = parts.join('/');
+    location.replace('/translation/' + (rest ? '#/' + rest : location.hash));
+  })();
+</script>
+<noscript><meta http-equiv="refresh" content="0; url=/translation/"></noscript>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: system-ui, "Segoe UI", Tahoma, sans-serif; margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 16px; box-sizing: border-box; text-align: center; background: #f8fafc; color: #0f172a; }
+  a { color: #2563eb; font-weight: 600; }
+  @media (prefers-color-scheme: dark) { body { background: #0b1120; color: #e2e8f0; } a { color: #93c5fd; } }
+</style>
+</head>
+<body>
+<main>
+  <p>The site has moved to a new address:<br><a href="/translation/">ghost20051.github.io/translation</a></p>
+  <p dir="rtl" lang="ar">الموقع اتنقل لعنوان جديد:<br><a href="/translation/">ghost20051.github.io/translation</a></p>
+</main>
+</body>
+</html>
